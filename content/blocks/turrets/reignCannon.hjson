@@ -1,0 +1,63 @@
+type: ItemTurret
+name: Twins
+description: Crux powers found these cannons very useful in their operations so they decided to put them on a static platform. Cannot be cooled.
+health: 2000
+size: 4
+range: 210
+reloadTime: 9
+shots: 2
+spread: 15
+alternate: true
+category: turret
+rotateSpeed: 1.3
+alwaysUnlocked: false
+research: reign
+shootSound: bang
+ammoUseEffect: casing4
+recoilAmount: 4
+inaccuracy: 2
+maxAmmo: 24
+ammoPerShot: 2
+shootShake: 2
+liquidCapacity: 0
+coolantUsage: 0
+ammoTypes: {
+    thorium: {
+        type: basicBulletType
+        damage: 65
+        speed: 13
+        pierce: true
+        pierceCap: 10
+        width: 14
+        height: 33
+        lifetime: 15
+        shootEffect: shootBig
+        fragVelocityMin: 0.4
+        hitEffect: blastExplosion
+        splashDamage: 16
+        splashDamageRadius: 13
+        fragBullets: 3
+        fragLifeMin: 0
+        fragCone: 30
+        fragBullet:{
+            type: BasicBulletType
+            speed: 9
+            damage: 18
+            width: 10
+            height: 10
+            pierce: true
+            pierceBuilding: true
+            pierceCap: 3
+            lifetime: 20
+            hitEffect: flakExplosion
+            splashDamage: 15
+            splashDamageRadius: 10
+        }
+    }    
+}
+requirements: [
+    thorium/500
+    surge-alloy/150
+    phase-fabric/100
+    plastanium/250
+]

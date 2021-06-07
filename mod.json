@@ -1,0 +1,8 @@
+{
+"name": "unit-turrets",
+"displayName": "Unit Turrets",
+"author": "NeutrO_",
+"description": "A mod which adds unit guns as separate turrets\n Research units to unlock their guns",
+"version": "0.5",
+"minGameVersion": "126"
+}

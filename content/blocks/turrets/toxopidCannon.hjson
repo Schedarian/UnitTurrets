@@ -1,0 +1,71 @@
+type: PowerTurret
+name: Eviscerator
+description: A cannon that was taken off old destroyed toxopid. Cannot be cooled.
+health: 1100
+size: 3
+range: 250
+reloadTime: 210
+shots: 1
+category: turret
+rotateSpeed: 1
+alwaysUnlocked: false
+research: toxopid
+shootSound: artillery
+recoilAmount: 6
+targetAir: false
+powerUse: 13
+liquidCapacity: 0
+coolantUsage: 0
+shootShake: 10
+shootType: {
+ type: ArtilleryBulletType
+ inaccuracy: 1
+ damage: 50
+ speed: 3
+ hitEffect: sapExplosion
+ lifetime: 80
+ width: 25
+ height: 25
+ collidesTiles: true
+ collides: true
+ splashDamageRadius: 80
+ splashDamage: 75
+ backColor: 6d56bf
+ frontColor: bf92f9
+ lightningColor: bf92f9
+ lightning: 5
+ lightningLength: 20
+ smokeEffect: shootBigSmoke2
+ hitShake: 10
+ status: sapped
+ statusDuration: 600
+ fragLifeMin: 0.3
+ fragBullets: 9
+ fragBullet: {
+  type: ArtilleryBulletType
+  damage: 30
+  speed: 2.3
+  hitEffect: sapExplosion
+  lifetime: 90
+  width: 20
+  height: 20
+  collidesTiles: false
+  splashDamageRadius: 70
+  splashDamage: 40
+  backColor: 6d56bf
+  frontColor: bf92f9
+  lightning: 2
+  lightningColor: bf92f9
+  lightningLength: 5
+  smokeEffect: shootBigSmoke2
+  hitShake: 5
+  status: sapped
+  statusDuration: 600
+ }
+}
+requirements: [
+    titanium/250
+    silicon/150
+    plastanium/150
+    surge-alloy/50
+]

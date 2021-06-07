@@ -1,0 +1,43 @@
+type: ItemTurret
+name: Striker
+description: A very powerful cannon that was found in omura's debris. Does not consume any energy but instead uses a lot of surge. Cannot be cooled.
+health: 2100
+size: 4
+range: 500
+reloadTime: 160
+shots: 1
+category: turret
+rotateSpeed: 1.4
+alwaysUnlocked: false
+research: omura
+shootSound: railgun
+recoilAmount: 6
+maxAmmo: 36
+ammoPerShot: 6
+shootShake: 4
+hasLiquids: false
+liquidCapacity: 0
+coolantUsage: 0
+ammoTypes: {
+surge-alloy: {
+    type: RailBulletType
+    damage: 1250
+    shootEffect: railShoot
+    length: 500
+    updateEffectSeg: 60
+    pierceEffect: railHit
+    updateEffect: railTrail
+    hitEffect: massiveExplosion
+    smokeEffect: shootBig2
+    pierceDamageFactor: 0.5
+    hitShake: 6
+    ammoMultiplier: 1
+    }
+}
+requirements: [
+    titanium/800
+    surge-alloy/250
+    phase-fabric/200
+    thorium/400
+    plastanium/150
+]

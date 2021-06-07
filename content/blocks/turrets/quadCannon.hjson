@@ -1,0 +1,49 @@
+type: ItemTurret
+name: Asteroid
+description: Secret experimental cannon: quad's bombs loaded into artillery barrel. Cannot be cooled.
+health: 1200
+size: 3
+range: 320
+shots: 1
+targetAir: false
+category: turret
+rotateSpeed: 1.4
+alwaysUnlocked: false
+research: quad
+shootSound: plasmadrop
+soundPitchMin: 1
+reloadTime: 160
+recoilAmount: 4
+inaccuracy: 0
+liquidCapacity: 0
+coolantUsage: 0
+shootShake: 2
+maxAmmo: 32
+ammoPerShot: 4
+ammoTypes:{
+    plastanium: {
+        type: ArtilleryBulletType
+        damage: 110
+        speed: 5
+        hitEffect: greenBomb
+        hitSound: plasmaboom
+        lifetime: 70
+        width: 20
+        height: 20
+        collidesTiles: true
+        collides: true
+        splashDamageRadius: 80
+        splashDamage: 220
+        backColor: 98ffa9
+        frontColor: ffffff
+        hitShake: 6
+        smokeEffect: shootBigSmoke2
+        ammoMultiplier: 1
+    }
+}
+requirements: [
+    titanium/200
+    silicon/200
+    plastanium/200
+    phase-fabric/50
+]

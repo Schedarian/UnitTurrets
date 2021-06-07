@@ -1,0 +1,47 @@
+type: PowerTurret
+name: Jackhammer
+description: Corvus' cannon without armor and other equipment. Cannot be cooled.
+health: 2150
+size: 4
+range: 460
+reloadTime: 350
+shots: 1
+category: turret
+rotateSpeed: 1
+alwaysUnlocked: false
+research: corvus
+shootSound: laserblast
+chargeSound: lasercharge
+soundPitchMin: 1
+recoilAmount: 7
+targetAir: true
+powerUse: 20
+liquidCapacity: 0
+coolantUsage: 0
+shootShake: 14
+chargeTime: 80
+chargeEffect: greenLaserCharge
+shootType: {
+ type: LaserBulletType
+ inaccuracy: 0
+ collidesAir: true
+ damage: 560
+ length: 460
+ width: 75
+ lifetime: 65
+ lightningSpacing: 35
+ lightningLength: 5
+ lightningDelay: 1.1
+ lightningLengthRand: 15
+ lightningDamage: 50
+ lightningAngleRand: 40
+ largeHit: true
+ colors: [98ffa940, 98ffa9, ffffff]
+}
+requirements: [
+ titanium/700
+ surge-alloy/150
+ plastanium/400
+ thorium/100
+ phase-fabric/100
+]
